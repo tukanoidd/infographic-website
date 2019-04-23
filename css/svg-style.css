@@ -1,0 +1,75 @@
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#netherlandsMap {
+    margin-top: 3%;
+    margin-left: 11%;
+    width: 78%;
+}
+
+.cls-1 {
+    fill: #b41f2c;
+}
+
+@keyframes blink {
+    0% { fill-opacity: 0; }
+    50% { fill-opacity: 1; }
+    100% { fill-opacity: 0; }
+}
+
+.cityFlash {
+    fill: #fff;
+    visibility: hidden;
+    animation: blink 1s infinite;
+}
+
+@keyframes dash{
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.cls-2 {
+    fill: none;
+    visibility: hidden;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 100;
+    stroke-width: 5px;
+    animation: dash 1s linear infinite forwards;
+}
+
+.cls-16, .cls-3 {
+    font-size: 20px;
+}
+
+.cls-14, .cls-16, .cls-3 {
+    fill: #fff;
+    visibility: hidden;
+}
+
+.cls-15 {
+    letter-spacing: -0.08em;
+}
+
+.cls-4 {
+    letter-spacing: -0.07em;
+}
+
+.cls-7, .cls-8, .cls-13, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-23 {
+    letter-spacing: -0.01em;
+}
+
+.cls-5, .cls-6, .cls-9, .cls-10, .cls-11, .cls-12, .cls-22, .cls-24 {
+    letter-spacing: 0em;
+}
+
+.cls-14 {
+    font-size: 50px;
+}
+
+#path4 {
+    visibility: visible;
+}

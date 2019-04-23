@@ -1,0 +1,179 @@
+@keyframes blink {
+    0% { opacity: 100%; }
+    50% { opacity: 0; }
+    100% { opacity: 100%; }
+}
+
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    background-color: #272932;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+}
+
+#startingText {
+    color: #B3192B;
+    font-size: 5em;
+}
+
+#topBtn {
+    width: 5vw;
+    position: fixed;
+    z-index: 100000;
+    right: 5%;
+    bottom: 5%;
+    transition: ease-in-out 0.5s;
+    opacity: 0.5;
+}
+
+#topBtn:hover {
+    opacity: 1;
+}
+
+button {
+    border: 0;
+    color: white;
+    background-color: #B3192B;
+    padding: 1% 2%;
+}
+
+button:hover {
+    background-color: #E62037;
+    color: lightgrey;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button, img {
+    transition: 0.5s;
+}
+
+#startBtn {
+    border-radius: 25px;
+    font-size: 3em;
+}
+
+#choosePathContainer {
+    margin-top: 5%;
+    display: none;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.chooseBtnContainer {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+#imgWrpLocal:hover + #chPathTxtLocal {
+    color: #E62037;
+}
+
+#imgWrpWorld:hover + #chPathTxtWorld {
+    color: #E62037;
+}
+
+.image-idle, .image-hover {
+    width: 90%;
+}
+
+.image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.image-hover:hover {
+    opacity: 1;
+}
+
+.choosePathText {
+    color: #B3192B;
+    transition: 0.5s;
+    text-align: center;
+}
+
+#pathContainer {
+    width: 90%;
+}
+
+.menuFlights {
+    display: none;
+}
+
+.backLi {
+    margin-top: 4%;
+}
+
+.leftMenu {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#localInfoContainer {
+    position: relative;
+    width: 100%;
+}
+
+#netherlandsMap, #localChart {
+    grid-column: 2;
+}
+
+#localChart {
+    visibility: hidden;
+    position: absolute;
+    top: 5%;
+}
+
+.downMenu {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.downMenu li {
+    float: left;
+    width: 10%;
+}
+
+.leftMenu ul, .downMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.leftMenu button, .downMenu button {
+    display: block;
+    width: 100%;
+    padding: 4% 0;
+    font-size: 1em;
+}
+
+.liText {
+    color: #C1DFF0;
+    font-size: 1.5em;
+    width: 90%;
+}
+
+.path {
+    display: none;
+    grid-template-columns: 25% 75%;
+    grid-row-gap: 5%;
+}
+
+#localPath {
+    width: 80%;
+}
